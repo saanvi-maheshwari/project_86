@@ -1,7 +1,8 @@
-
-
-var canvas = new fabric.Canvas('myCanvas');
+ canvas = new fabric.Canvas('myCanvas');
  var x= document.getElementById("myAudio");
+
+ block_image_object = "";
+
 
 function new_image()
 {
@@ -14,13 +15,11 @@ function new_image()
          top:0,
          left:0
      });
-    })
-     
      canvas.add(block_image_object);
+    });     
  }	
 
 
  function playSound(){
 	x.play();
-    new_image();
 }
